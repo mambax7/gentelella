@@ -1,0 +1,41 @@
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+<div class="menu_section">
+		<ul class="nav side-menu">
+		
+		<li class="<{if $menu.selected|default:false}> active<{/if}>">
+		<a href="<{$menu.link}>" target="<{$menu.target}>" alt="<{$menu.alt_title}>" title="<{$menu.alt_title}>"><i class="fa fa-home"></i>
+		&nbsp;<{$smarty.const.THEME_HOME}></a></li><br>
+		<{foreach item=menu from = $block}>
+		<{if $menu.level == 0}>
+			<{if $menu.hassub}>
+				<!-- DropDown -->
+				<{if $menu.alt_title != 'Header'}>
+					<li class="<{if $menu.selected|default:false}> active<{/if}>">
+					<a><{if $menu.image}><i class="<{$menu.image}>"></i><{else}><i class="fa <{if $menu.selected|default:false}>fa-check-circle<{else}>fa-cube<{/if}>"></i><{/if}> <{$menu.title}>
+					<span class="fa fa-chevron-down"></span></a>   
+				<{else}> 
+					<h3><{$menu.title}></h3><br />
+				<{/if}>
+				<ul class="nav child_menu">
+
+			<{else}> 
+				<!-- Main Menu -->
+				<{if $menu.alt_title != 'Header'}>
+					<li class="<{if $menu.selected|default:false}> active<{/if}>">
+					<a href="<{$menu.link}>" target="<{$menu.target}>" alt="<{$menu.alt_title}>" title="<{$menu.alt_title}>"><{if $menu.image}><i class="<{$menu.image}>"></i><{else}><i class="fa <{if $menu.selected|default:false}>fa-check-circle<{else}>fa-cube<{/if}>"></i><{/if}>
+					<{$menu.title}></a>
+				<{else}>
+					<h3><{$menu.title}>3</h3><br />
+				<{/if}>
+			<{/if}>
+			<{if $menu.close != ''}><{$menu.close}><{/if}>
+		<{else}>
+			<!-- Sub Menu -->
+			<{if $menu.alt_title != 'Header'}>
+				<li class="<{if $menu.selected|default:false}> active<{/if}>"><a href="<{$menu.link}>" target="<{$menu.target}>" alt="<{$menu.alt_title}>" title="<{$menu.alt_title}>"><{$menu.title}> 4</a>	
+			<{/if}>
+			<{if $menu.close != ''}><{$menu.close}><{/if}>
+		<{/if}>
+		<{/foreach}>
+</div>
+</div>
