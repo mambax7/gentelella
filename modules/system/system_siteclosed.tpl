@@ -17,8 +17,7 @@
 	<link rel="icon" href="<{xoImgUrl}>/production/images/favicon.ico" type="image/ico" />
 
     <title><{if $xoops_dirname == "system"}><{$xoops_sitename}><{if $xoops_pagetitle !=''}> - <{$xoops_pagetitle}><{/if}><{else}><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> - <{$xoops_sitename}><{/if}><{/if}></title>
-      
-
+     
     <!-- Bootstrap -->
     <link href="<{xoImgUrl}>/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -48,10 +47,10 @@
 					<p class="text-danger"><{$redirect_message}></p>
 			 <{/if}>
               <div>
-                <input type="text" class="form-control" name="uname" placeholder="<{$smarty.const.THEME_USERNAME}>1" autocomplete="off" required/>
+                <input type="text" class="form-control" name="uname" placeholder="<{$smarty.const.THEME_USERNAME}>" autocomplete="off" required/>
               </div>
               <div>
-                <input type="password" class="form-control" name="pass" placeholder="<{$smarty.const.THEME_PASSWORD}>2" autocomplete="off" required/>
+                <input type="password" class="form-control" name="pass" placeholder="<{$smarty.const.THEME_PASSWORD}>" autocomplete="off" required/>
               </div>
               <div>
 				<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>">
