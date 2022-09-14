@@ -44,20 +44,27 @@
 			  <p><img class="mx-auto d-block img-fluid" src="<{$xoops_url}>/images/logo.png" alt="<{$xoops_sitename}>" title="<{$xoops_sitename}>"></p>
               <h1><{$xoops_sitename}></h1>
 			  <p class="text-muted"><{$lang_siteclosemsg}></p>
+			  <{if $redirect_message|default:false}>
+					<p class="text-danger"><{$redirect_message}></p>
+			 <{/if}>
               <div>
-                <input type="text" class="form-control" name="uname" placeholder="<{$smarty.const.THEME_USERNAME}>" autocomplete="off" required/>
+                <input type="text" class="form-control" name="uname" placeholder="<{$smarty.const.THEME_USERNAME}>1" autocomplete="off" required/>
               </div>
               <div>
-                <input type="password" class="form-control" name="pass" placeholder="<{$smarty.const.THEME_PASSWORD}>" autocomplete="off" required/>
+                <input type="password" class="form-control" name="pass" placeholder="<{$smarty.const.THEME_PASSWORD}>2" autocomplete="off" required/>
               </div>
               <div>
 				<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>">
 				<input type="hidden" name="xoops_login" value="1">
 				<input type="hidden" name="op" value="login" />
-                <button type="submit" class="btn btn-primary btn-sm"><{$lang_login}></button>
+                <button type="submit" class="btn btn-primary btn-sm"><{$smarty.const.THEME_ACCOUNT_LOGIN}></button>
+				  
                 <!--<a class="reset_pass" href="#">Lost your password?</a>-->
               </div>
-
+					<div>
+                         <input id="rememberPasswordCheck" type="checkbox" />
+                         <label name="rememberme" for="rememberPasswordCheck"><{$smarty.const.THEME_REMEMBERME}></label>
+                     </div>
               <div class="clearfix"></div>
 
               <div class="separator">
