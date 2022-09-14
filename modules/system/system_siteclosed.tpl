@@ -29,6 +29,7 @@
 
     <!-- Custom Theme Style -->
     <link href="<{xoImgUrl}>/build/css/custom.min.css" rel="stylesheet">
+	<link href="<{xoImgUrl}>xoops.css" rel="stylesheet" />
   </head>
 
   <body class="login">

@@ -1,7 +1,7 @@
 		<div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"> <span><{$xoops_sitename}></span></a>
+              <a href="<{$xoops_url}>" class="site_title"> <span><{$xoops_sitename}></span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -13,7 +13,11 @@
               </div>
               <div class="profile_info">
                 <span><{$smarty.const.THEME_WELCOME}>,</span>
-                <h2><{$xoops_uname}></h2>
+				<{if $xoops_name}>
+                <h2><{$xoops_name}></h2>
+				<{else}>
+				<h2><{$xoops_uname}></h2>
+				<{/if}>	
               </div>
             </div>
 			<{/if}>	
@@ -147,18 +151,18 @@
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
 			<{if $xoops_isadmin}>
-              <a data-toggle="tooltip" data-placement="top" title="<{$smarty.const.THEME_ADMINPANEL}>" href="{$xoops_url}>/admin.php">
+              <a data-toggle="tooltip" data-placement="top" title="<{$smarty.const.THEME_ADMINPANEL}>" href="<{$xoops_url}>/admin.php" target='_blank'>
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
               </a>
 			 <{/if}>
-			 <!--
+			 
               <a data-toggle="tooltip" data-placement="top" title="FullScreen">
                 <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
               </a>
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a>
-			 -->
+			 
 			  <{if $xoops_isuser}>
               <a data-toggle="tooltip" data-placement="top" title="<{$smarty.const.THEME_ACCOUNT_LOGOUT}>" href="{$xoops_url}>/user.php?op=logout">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
