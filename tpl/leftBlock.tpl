@@ -141,9 +141,9 @@
       <{if $block.title}>
       <h3><{$block.title}></h3>
       <{/if}>
-      <div class="side-menu text-justify p-2">
+     
       <{$block.content}><br >
-	  </div>
+	  
       <{/foreach}>
    </div>
 </div>
@@ -154,25 +154,57 @@
               <a data-toggle="tooltip" data-placement="top" title="<{$smarty.const.THEME_ADMINPANEL}>" href="<{$xoops_url}>/admin.php" target='_blank'>
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
               </a>
+			 <{else}>
+			  <a data-toggle="tooltip" data-placement="top">
+                &nbsp;
+              </a>
 			 <{/if}>
 			 
-              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Lock">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-              </a>
+			  
+   		    <a class="button" onclick="openFullscreen();" data-toggle="tooltip" data-placement="top" title="FullScreen">
+				<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+			</a>
+             <a class="button" onclick="closeFullscreen();" data-toggle="tooltip" data-placement="top" title="Close FullScreen">
+				<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+			</a>
 			 
 			  <{if $xoops_isuser}>
-              <a data-toggle="tooltip" data-placement="top" title="<{$smarty.const.THEME_ACCOUNT_LOGOUT}>" href="{$xoops_url}>/user.php?op=logout">
+              <a data-toggle="tooltip" data-placement="top" title="<{$smarty.const.THEME_ACCOUNT_LOGOUT}>" href="<{$xoops_url}>/user.php?op=logout">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+			   <{else}>
+			  <a data-toggle="tooltip" data-placement="top">
+                &nbsp;
               </a>
 			  <{/if}>
             </div>
             <!-- /menu footer buttons -->
           </div>
         </div>
+		
+		
+	
+<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
 
-
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+</script>
 
 	
