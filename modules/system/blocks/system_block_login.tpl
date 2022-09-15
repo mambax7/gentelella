@@ -1,4 +1,4 @@
-<div class="loginform">
+<div class="loginform text-justify p-2">
     <form action="<{xoAppUrl user.php}>" method="post" role="form">
         <div class="form-group">
             <{$block.lang_username}>
