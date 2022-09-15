@@ -1,5 +1,4 @@
-<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-<div class="menu_section">
+
         <ul class="nav side-menu">
         <{if $xoops_isadmin}>
             <li class="<{if $module.highlight|default:false}> active<{/if}>"><a href="<{xoAppUrl admin.php}>" title="<{$block.lang_adminmenu}>"><i class="fa fa-wrench"></i> <{$block.lang_adminmenu}></a></li>
@@ -18,5 +17,3 @@
         <{/if}>
          <li class="<{if $module.highlight|default:false}> active<{/if}>"><a href="<{xoAppUrl user.php?op=logout}>" title="<{$block.lang_logout}>"><i class="fa fa-arrow-right"></i><{$block.lang_logout}></a></li>
 </ul>
-</div>
-</div>
