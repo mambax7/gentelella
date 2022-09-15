@@ -3,7 +3,7 @@
 		<ul class="nav side-menu">
 		
 		<li class="<{if $menu.selected|default:false}> active<{/if}>">
-		<a href="<{xoAppUrl }>" target="<{$menu.target}>" alt="<{$menu.alt_title}>" title="<{$menu.alt_title}>"><i class="fa fa-home"></i>
+		<a href="<{xoAppUrl }>" target="<{$menu.target}>" alt="<{$smarty.const.THEME_HOME}>" title="<{$smarty.const.THEME_HOME}>"><i class="fa fa-home"></i>
 		&nbsp;<{$smarty.const.THEME_HOME}></a></li><br>
 		<{foreach item=menu from = $block}>
 		<{if $menu.level == 0}>
