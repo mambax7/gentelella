@@ -11,7 +11,7 @@
                 <div class="col-md-5 col-sm-5   form-group pull-right top_search">
 				<form role="search" action="<{xoAppUrl search.php}>" method="get">
                   <div class="input-group">
-                    <input type="text" class="form-control" placeholder="<{$smarty.const.THEME_SEARCH_TEXT}>">
+                    <input type="text" class="form-control" name="query" placeholder="<{$smarty.const.THEME_SEARCH_TEXT}>">
 					<input type="hidden" name="action" value="results">
                     <span class="input-group-btn">
                       <button class="btn btn-dark" type="submit"><{$smarty.const.THEME_SEARCH_BUTTON}></button>
