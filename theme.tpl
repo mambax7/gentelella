@@ -36,7 +36,7 @@
 
     <!-- Custom Theme Style -->
     <link href="<{xoImgUrl}>/build/css/custom.min.css" rel="stylesheet">
-	<link href="<{xoImgUrl}>extra.css" rel="stylesheet">
+	<link href="<{xoImgUrl}>xoops.css" rel="stylesheet" />
 	<{$xoops_module_header}>
   </head>
 
