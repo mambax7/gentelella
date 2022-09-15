@@ -161,10 +161,10 @@
 			 <{/if}>
 			 
 			  
-   		    <a class="button" onclick="openFullscreen();" data-toggle="tooltip" data-placement="top" title="FullScreen">
+   		    <a onclick="openFullscreen();" data-toggle="tooltip" data-placement="top" title="FullScreen">
 				<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
 			</a>
-             <a class="button" onclick="closeFullscreen();" data-toggle="tooltip" data-placement="top" title="Close FullScreen">
+             <a onclick="closeFullscreen();" data-toggle="tooltip" data-placement="top" title="Close FullScreen">
 				<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
 			</a>
 			 
