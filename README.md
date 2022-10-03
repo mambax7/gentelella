@@ -1,4 +1,4 @@
-Gentelella template by [Colorlib](https://github.com/ColorlibHQ/gentelella) ported to work and powered with [XOOPS CMS](https://www.xoops.org/) as a frontend theme
+Gentelella Bootstrap 4 template by [Colorlib](https://github.com/ColorlibHQ/gentelella) ported to work and powered with [XOOPS CMS](https://www.xoops.org/) as a frontend theme
 
 ## Features
 This XOOPS theme uses the default Bootstrap 4 styles along with a variety of powerful jQuery plugins and tools to create a powerful framework for creating intranet, web apps and dashboards in XOOPS.
