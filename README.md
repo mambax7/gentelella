@@ -1,4 +1,4 @@
-Gentelella Bootstrap 4 template by [Colorlib](https://github.com/ColorlibHQ/gentelella) ported to work and powered with [XOOPS CMS](https://www.xoops.org/) as a frontend theme
+Gentelella4 Bootstrap 4 template by [Colorlib](https://github.com/ColorlibHQ/gentelella) ported to work and powered with [XOOPS CMS](https://www.xoops.org/) as a frontend theme
 
 ## Features
 This XOOPS theme uses the default Bootstrap 4 styles along with a variety of powerful jQuery plugins and tools to create a powerful framework for creating intranet, web apps and dashboards in XOOPS.
@@ -13,8 +13,8 @@ more.
 
 1. To download from GitHub, you should navigate to the top level of the project and then a green "Code" download button will be visible on the right. 
 2. Choose the Download ZIP option from the Code pull-down menu. That ZIP file will contain the entire theme
-3. Your download may have a folder inside a folder when you uncompress the files (eg: gentelella-main\gentelella-main)
-4. Rename the subfolder gentelella-main to gentelella and move it to your XOOPS themes folder www.yoursite.com/themes/
+3. Your download may have a folder inside a folder when you uncompress the files (eg: gentelella4-main\gentelella4-main)
+4. Rename the subfolder gentelella4-main to gentelella4 and move it to your XOOPS themes folder www.yoursite.com/themes/
 5. Go to System Admin->Preferences-> System Options -> General Settings, and make Gentelella as your Default Theme. 
 
 ## Menu Control (Support for MyMenus Module)
@@ -36,7 +36,7 @@ more.
 	
 	b. Display Method —> Assign to template
 	
-	c. Unique ID —> gentelella
+	c. Unique ID —> gentelella4
 	
 	d. The above is the recommended by My Menu module. After the settings, you can control the site menu using My Menu module.
 	
