@@ -27,7 +27,7 @@
 				<li role="presentation" class="nav-item dropdown open">
 				<{xoInboxCount assign='unread_count'}>
 				<{if $unread_count > 0}>
-					<a href="<{xoAppUrl viewpmsg.php}>" class="dropdown-toggle info-number" id="navbarDropdown1" aria-expanded="false" title="<{$smarty.const.THEME_ACCOUNT_MESSAGES}>">
+					<a href="<{xoAppUrl 'viewpmsg.php'}>" class="dropdown-toggle info-number" id="navbarDropdown1" aria-expanded="false" title="<{$smarty.const.THEME_ACCOUNT_MESSAGES}>">
 					<i class="fa fa-envelope-o"></i>
                     <span class="badge bg-red"><{$unread_count}></span>
                     </a>
@@ -92,7 +92,7 @@
                   </ul>-->
 						
 						<{else}>
-						<a href="<{xoAppUrl viewpmsg.php}>" class="dropdown-toggle info-number" id="navbarDropdown1" aria-expanded="false" title="<{$smarty.const.THEME_ACCOUNT_MESSAGES}>">
+						<a href="<{xoAppUrl 'viewpmsg.php'}>" class="dropdown-toggle info-number" id="navbarDropdown1" aria-expanded="false" title="<{$smarty.const.THEME_ACCOUNT_MESSAGES}>">
 						<i class="fa fa-envelope-o"></i>
 						<span class="badge bg-green">0</span>
 						</a>

@@ -9,7 +9,7 @@
 
               <div class="title_right">
                 <div class="col-md-5 col-sm-5   form-group pull-right top_search">
-				<form role="search" action="<{xoAppUrl search.php}>" method="get">
+				<form role="search" action="<{xoAppUrl 'search.php'}>" method="get">
                   <div class="input-group">
                     <input type="text" class="form-control" name="query" placeholder="<{$smarty.const.THEME_SEARCH_TEXT}>">
 					<input type="hidden" name="action" value="results">

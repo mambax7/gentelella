@@ -13,7 +13,7 @@
 	<meta name="rating" content="<{$xoops_meta_rating}>">
 	<meta name="author" content="<{$xoops_meta_author}>">
 	<meta name="generator" content="XOOPS">
-    <link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+    <link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl 'backend.php'}>" />
 	<link rel="icon" href="<{xoImgUrl}>/production/images/favicon.ico" type="image/ico" />
 
     <title><{if $xoops_dirname == "system"}><{$xoops_sitename}><{if $xoops_pagetitle !=''}> - <{$xoops_pagetitle}><{/if}><{else}><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> - <{$xoops_sitename}><{/if}><{/if}></title>
@@ -44,19 +44,19 @@
     <div class="container body">
       <div class="main_container">
 		<!-- Sidebar -->
-        <{includeq file="$theme_name/tpl/leftBlock.tpl"}>
+        <{include file="$theme_name/tpl/leftBlock.tpl"}>
 		<!-- Sidebar -->
 		
         <!-- top navigation -->
-        <{includeq file="$theme_name/tpl/topNav.tpl"}>
+        <{include file="$theme_name/tpl/topNav.tpl"}>
         <!-- /top navigation -->
 
         <!-- page content -->
-		<{includeq file="$theme_name/tpl/content.tpl"}>
+		<{include file="$theme_name/tpl/content.tpl"}>
         <!-- /page content -->
 
         <!-- footer content -->
-		<{includeq file="$theme_name/tpl/footer.tpl"}>
+		<{include file="$theme_name/tpl/footer.tpl"}>
         <!-- /footer content -->
       </div>
     </div>

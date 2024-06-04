@@ -40,7 +40,7 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-             <form action="<{xoAppUrl user.php}>" method="post" role="form">
+             <form action="<{xoAppUrl 'user.php'}>" method="post" role="form">
 			  <p><img class="mx-auto d-block img-fluid" src="<{$xoops_url}>/images/logo.png" alt="<{$xoops_sitename}>" title="<{$xoops_sitename}>"></p>
               <h1><{$xoops_sitename}></h1>
 			  <p class="text-muted"><{$lang_siteclosemsg}></p>
