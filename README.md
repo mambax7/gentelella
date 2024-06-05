@@ -43,4 +43,4 @@ more.
 	e. The Menu is displayed in the Left Block
 	
 ## Preview
-![Gentelella Bootstrap Admin Template](https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/gentelella-admin-template-preview.jpg 
+![Gentelella Bootstrap Admin Template](https://pictr.com/images/2024/06/05/x5fKb5.jpg) 
