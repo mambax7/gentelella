@@ -26,7 +26,7 @@
             <br />
 
 			<{if $xoops_menu_gentelella4}>
-					<{$xoops_menu_gentelella4|default: false}>
+					<{$xoops_menu_gentelella4}>
 			
 			<{else}>
             <!-- sidebar menu -->
